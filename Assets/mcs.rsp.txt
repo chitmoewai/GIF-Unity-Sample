@@ -1,0 +1,6 @@
+//-r:System.Drawing.dll
+
+//mcs.rsp file
+-r:System.Drawing.dll
+//Tried
+-r:/Library/Frameworks/Mono.framework/Versions/5.16.0/lib/libgdiplus.0.dylib -target:framework System.Drawing
