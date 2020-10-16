@@ -11,18 +11,18 @@ public class GifImageDraw : MonoBehaviour
     // This is the UI image object you created which is a child of "canvas".
     public GameObject imageGo;
 
-    //private void Start()
-    //{
-    //    GrabGifImage();
-    //}
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            GrabGifImage();
-        }
+        GrabGifImage();
     }
+    // Update is called once per frame
+    //void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.G))
+    //    {
+    //        GrabGifImage();
+    //    }
+    //}
     void GrabGifImage()
     {
         ShowGif(gifPath);
