@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e71653d3ed94d4db19d32fcc1270f643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gifPath: Assets/Cheer bro!.gif
+  gifPath: Assets/GIFs/Cheer bro!.gif
   imageGo: {fileID: 2325267075406079101}
 --- !u!1 &8714344401525658167
 GameObject:

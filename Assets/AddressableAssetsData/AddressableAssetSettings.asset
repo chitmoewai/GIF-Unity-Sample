@@ -1,0 +1,103 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468a46d0ae32c3544b7d98094e6448a9, type: 3}
+  m_Name: AddressableAssetSettings
+  m_EditorClassIdentifier: 
+  m_DefaultGroup: 8f1453c486b59430d8e92275d4088cb0
+  m_BuildRemoteCatalog: 1
+  m_BundleLocalCatalog: 0
+  m_DisableCatalogUpdateOnStart: 0
+  m_UniqueBundleIds: 0
+  m_RemoteCatalogBuildPath:
+    m_Id: 34fff0426304b4398a2a0256b9352a87
+  m_RemoteCatalogLoadPath:
+    m_Id: 203207ef55d604b67aa865138d761d51
+  m_overridePlayerVersion: 
+  m_GroupAssets:
+  - {fileID: 11400000, guid: 780f42411868f41f3b633b24f1308926, type: 2}
+  - {fileID: 11400000, guid: fabcee7522e6c45e9896425c35038806, type: 2}
+  - {fileID: 11400000, guid: 917ffd2bf5bdc468cb2b579cd908c34f, type: 2}
+  m_BuildSettings:
+    m_CompileScriptsInVirtualMode: 0
+    m_CleanupStreamingAssetsAfterBuilds: 1
+    m_LogResourceManagerExceptions: 1
+    m_BundleBuildPath: Temp/com.unity.addressables/AssetBundles
+  m_ProfileSettings:
+    m_Profiles:
+    - m_InheritedParent: 
+      m_Id: 154e300cea169459cb0f3e17180e1719
+      m_ProfileName: Default
+      m_Values:
+      - m_Id: 1a2bcdda8df124329a8ed73c1aec526c
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: df9ab548b24c345f9882d584c5c0a578
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 43787d9bac80a4d6d82f9559fef67989
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 34fff0426304b4398a2a0256b9352a87
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 203207ef55d604b67aa865138d761d51
+        m_Value: http://localhost/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: 434c376fce2b3489896e302dbef45b08
+      m_ProfileName: GIF_Remote
+      m_Values:
+      - m_Id: 1a2bcdda8df124329a8ed73c1aec526c
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: df9ab548b24c345f9882d584c5c0a578
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 43787d9bac80a4d6d82f9559fef67989
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 34fff0426304b4398a2a0256b9352a87
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 203207ef55d604b67aa865138d761d51
+        m_Value: https://datthinpone-video-contents.sgp1.digitaloceanspaces.com/Addressable/chitmoe/[BuildTarget]
+    m_ProfileEntryNames:
+    - m_Id: 1a2bcdda8df124329a8ed73c1aec526c
+      m_Name: BuildTarget
+      m_InlineUsage: 0
+    - m_Id: df9ab548b24c345f9882d584c5c0a578
+      m_Name: LocalBuildPath
+      m_InlineUsage: 0
+    - m_Id: 43787d9bac80a4d6d82f9559fef67989
+      m_Name: LocalLoadPath
+      m_InlineUsage: 0
+    - m_Id: 34fff0426304b4398a2a0256b9352a87
+      m_Name: RemoteBuildPath
+      m_InlineUsage: 0
+    - m_Id: 203207ef55d604b67aa865138d761d51
+      m_Name: RemoteLoadPath
+      m_InlineUsage: 0
+    m_ProfileVersion: 1
+  m_LabelTable:
+    m_LabelNames:
+    - default
+    - gif
+  m_SchemaTemplates: []
+  m_GroupTemplateObjects:
+  - {fileID: 11400000, guid: 73174f5f9118d4bf694aab809bb55081, type: 2}
+  m_InitializationObjects: []
+  m_CertificateHandlerType:
+    m_AssemblyName: 
+    m_ClassName: 
+  m_ActivePlayerDataBuilderIndex: 3
+  m_DataBuilders:
+  - {fileID: 11400000, guid: 1e12c7332a70c43e794fe4126d90c65e, type: 2}
+  - {fileID: 11400000, guid: 02c22c7ae2028407f968c53d813923c9, type: 2}
+  - {fileID: 11400000, guid: 64e4756bf31b64306864dc1115e5d3cf, type: 2}
+  - {fileID: 11400000, guid: 4bd39484cc7ff4441aead758bdb7b2f5, type: 2}
+  m_ActiveProfileId: 434c376fce2b3489896e302dbef45b08
+  m_HostingServicesManager:
+    m_HostingServiceInfos: []
+    m_Settings: {fileID: 11400000}
+    m_NextInstanceId: 0
+    m_RegisteredServiceTypeRefs: []
