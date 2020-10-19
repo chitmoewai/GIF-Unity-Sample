@@ -4,35 +4,31 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Configuration;
+using System.Drawing;
 
 public class GifImageDraw : MonoBehaviour
 {
-    public string gifPath = "";
+    //private string gifPath = "Assets/GIFs/Cheer bro!.gif";
+    //public string gifPath = "";
+    //public System.Drawing.Image drawingImage;
     // This is the UI image object you created which is a child of "canvas".
     public GameObject imageGo;
 
-    private void Start()
-    {
-        GrabGifImage();
-    }
-    // Update is called once per frame
-    //void Update()
+    //private void Start()
     //{
-    //    if (Input.GetKeyDown(KeyCode.G))
-    //    {
-    //        GrabGifImage();
-    //    }
+    //    GrabGifImage();
     //}
-    void GrabGifImage()
-    {
-        ShowGif(gifPath);
-    }
 
-    void ShowGif(string path)
+    //public void GrabGifImage()
+    //{
+    //    ShowGif(drawingImage);
+    //}
+
+    public void ShowGif(System.Drawing.Image img)
     {
         GameObject imageGo = GameObject.Find("RawImage");
         Gif gif = new Gif();
-        gif.loadGif(path);
+        gif.loadGif(img);
         RectTransform rect = imageGo.GetComponent<RectTransform>();
         List<Texture2D> frames = gif.GetFrames();
         RawImage rawImage = imageGo.GetComponent<RawImage>();

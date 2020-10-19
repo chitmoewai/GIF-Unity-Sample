@@ -437,6 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c23e26d4acb4251bc79cf206669627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  label:
+    m_LabelString: gif
   data:
     m_AssetGUID: 2719c4c01611441bead43faafcd4bab0
     m_SubObjectName: 

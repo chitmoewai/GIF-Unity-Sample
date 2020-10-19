@@ -25,6 +25,13 @@ MonoBehaviour:
     - gif
     m_MainAsset: {fileID: 11400000, guid: 2719c4c01611441bead43faafcd4bab0, type: 2}
     m_TargetAsset: {fileID: 11400000, guid: 2719c4c01611441bead43faafcd4bab0, type: 2}
+  - m_GUID: e922b9cc55c88404d80cc4226dbbbca9
+    m_Address: GIFs
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - gif
+    m_MainAsset: {fileID: 102900000, guid: e922b9cc55c88404d80cc4226dbbbca9, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: e922b9cc55c88404d80cc4226dbbbca9, type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 0f327fd510e1e4cc39d1489110c949d2, type: 2}
   m_SchemaSet:

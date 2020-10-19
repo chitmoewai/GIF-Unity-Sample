@@ -4,8 +4,7 @@ using System;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using UnityEngine;
-
-
+using UnityEngine.AddressableAssets;
 
 public class Gif : MonoBehaviour
 {
@@ -15,9 +14,11 @@ public class Gif : MonoBehaviour
     int frameCount = 0;
     FrameDimension dimension;
 
-    public void loadGif(string filepath)
+    public void loadGif(Image img)
     {
-        gifImage = Image.FromFile(filepath);
+        //gifImage = Image.FromFile(filepath);
+
+        gifImage = img;
         dimension = new FrameDimension(gifImage.FrameDimensionsList[0]);
         frameCount = gifImage.GetFrameCount(dimension);
     }
