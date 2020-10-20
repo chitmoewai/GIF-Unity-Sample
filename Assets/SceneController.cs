@@ -39,7 +39,7 @@ public class SceneController : MonoBehaviour
         {
             Debug.Log("Successfully loaded all contents");
           
-            Addressables.LoadAssetAsync<Texture2D>("GIFs/Cheer bro!.gif").Completed += (gifRef) =>
+            Addressables.LoadAssetAsync<Texture2D>("GIFs/aa.gif").Completed += (gifRef) =>
             {
                 var textu = gifRef.Result;
                
@@ -64,22 +64,31 @@ public class SceneController : MonoBehaviour
 
     public static Image Texture2Image(Texture2D texture)
     {
-        Image img;
-        MemoryStream MS = new MemoryStream();
+        //Image img;
+        //MemoryStream MS = new MemoryStream();
+        //texture.EncodeToPNG();
+        //MS.Seek(0, SeekOrigin.Begin);
+        //img = (Bitmap)Image.FromStream(MS);
+        //return img;
 
+        if (texture == null)
+        {
+            return null;
+        }
+       
+        byte[] bytes = texture.EncodeToPNG();
 
-        texture.EncodeToPNG();
-        //texture.SaveAsPng(MS, texture.width, texture.height);
-        //Go To the  beginning of the stream.
-        MS.Seek(0, SeekOrigin.Begin);
-        //Create the image based on the stream.
-        img = (Bitmap)Image.FromStream(MS);
+        MemoryStream ms = new MemoryStream(bytes);
+        ms.Seek(0, SeekOrigin.Begin);
 
-        return img;
+        //Create an image from a stream.
+        Image bmp2 = Bitmap.FromStream(ms);
 
-        //byte[] buf = texture.EncodeToPNG();
-        //System.IO.MemoryStream ms = new System.IO.MemoryStream(buf);
-        //return new System.Drawing.Bitmap(ms);
+        //Close the stream, we nolonger need it.
+        ms.Close();
+        ms = null;
+
+        return bmp2;
 
     }
 
