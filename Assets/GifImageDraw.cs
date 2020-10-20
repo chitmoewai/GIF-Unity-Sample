@@ -9,26 +9,27 @@ using System.Drawing;
 public class GifImageDraw : MonoBehaviour
 {
     //private string gifPath = "Assets/GIFs/Cheer bro!.gif";
-    //public string gifPath = "";
+    public string gifPath = "";
     //public System.Drawing.Image drawingImage;
     // This is the UI image object you created which is a child of "canvas".
     public GameObject imageGo;
 
-    //private void Start()
-    //{
-    //    GrabGifImage();
-    //}
+    private void Start()
+    {
+        GrabGifImage();
+        Debug.Log(gifPath);
+    }
 
-    //public void GrabGifImage()
-    //{
-    //    ShowGif(drawingImage);
-    //}
+    public void GrabGifImage()
+    {
+        ShowGif(gifPath);
+    }
 
-    public void ShowGif(System.Drawing.Image img)
+    public void ShowGif(string path)
     {
         GameObject imageGo = GameObject.Find("RawImage");
         Gif gif = new Gif();
-        gif.loadGif(img);
+        gif.loadGif(path);
         RectTransform rect = imageGo.GetComponent<RectTransform>();
         List<Texture2D> frames = gif.GetFrames();
         RawImage rawImage = imageGo.GetComponent<RawImage>();

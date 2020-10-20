@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: dedd9f518e25945e7b66b41664cb360e
+    path: Assets/Scenes/GIFLoadfromServer.unity
+    guid: 490cf5903b8844467b45646992eeacc6
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 7cafb461cfe3c432fb8f3f7b315486d2,
       type: 2}

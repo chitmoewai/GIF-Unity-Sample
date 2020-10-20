@@ -14,11 +14,9 @@ public class Gif : MonoBehaviour
     int frameCount = 0;
     FrameDimension dimension;
 
-    public void loadGif(Image img)
+    public void loadGif(string filepath)
     {
-        //gifImage = Image.FromFile(filepath);
-
-        gifImage = img;
+        gifImage = Image.FromFile(filepath);
         dimension = new FrameDimension(gifImage.FrameDimensionsList[0]);
         frameCount = gifImage.GetFrameCount(dimension);
     }

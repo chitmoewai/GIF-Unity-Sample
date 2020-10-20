@@ -39,7 +39,7 @@ public class SceneController : MonoBehaviour
         {
             Debug.Log("Successfully loaded all contents");
           
-            Addressables.LoadAssetAsync<Texture2D>("GIFs/aa.gif").Completed += (gifRef) =>
+            Addressables.LoadAssetAsync<Texture2D>("GIFs/Cheer bro!.gif").Completed += (gifRef) =>
             {
                 var textu = gifRef.Result;
                
@@ -56,7 +56,7 @@ public class SceneController : MonoBehaviour
         var sresult = obj.Result;
         Debug.Log(sresult.gifObj.Count);
 
-        sresult.gifObj[0].GetComponentInChildren<GifImageDraw>().ShowGif(drawingImg);
+        //sresult.gifObj[0].GetComponentInChildren<GifImageDraw>().ShowGif(drawingImg);
         Instantiate(sresult.gifObj[0], parent);
         //gm.GetComponent<GifImageDraw>().gifPath = path;
        
